@@ -1,6 +1,6 @@
 # Used to switch to CPU for testing
 # Set to True to use the CPU
-if False:
+if True:
     import os
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
