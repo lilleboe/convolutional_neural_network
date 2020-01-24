@@ -22,7 +22,7 @@
 - *.pickle files if you want to test a quick training routine
 
 ## vgg16_mode.h5 Location
-- Model & Weights: https://drive.google.com/open?id=1QBoNr6Rnqvzgtx_-ZtF3uvfSZgYcX9dZ
+- vgg16_mode.h5: https://drive.google.com/open?id=1QBoNr6Rnqvzgtx_-ZtF3uvfSZgYcX9dZ
 
 ## How to run
 Simply run the run_cnn.py python file and it will automatically create the 5 output images (1.png through 5.png) by processing image1.png through image5.png and placing them in the graded_images directory.  The weights and model data is automatically imported from vgg16_model.h5.
@@ -30,6 +30,8 @@ Simply run the run_cnn.py python file and it will automatically create the 5 out
 If you want to run a short iteration of the training procedure, you can set the variable "train_it" to True and it will pull in data from the .pickle files.  It will output a few file artifacts which can be ignored/removed if desired.  The only purpose of including these were to verify the training worked correctly.
 
 The CNN model architecture is stored in the digit_cnn.py file and the majority of the pipeline steps are in the proj_pipeline.py file.  
+
+Be careful running on GPU if you are using a personal computer vs running in AWS/Azure/Etc.  If you don't have the right CUDNN and Tensorflow version you may run into issues.  This is dependant on your GPU, so it may require extra research to get your machine set up correctly.
 
 ## Video(s)
 - Example video can be found here:
