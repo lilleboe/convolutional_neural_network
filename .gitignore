@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Too large to upload to Github
+*.h5
+*.hdf5

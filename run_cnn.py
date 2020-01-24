@@ -1,5 +1,6 @@
-
-if False:  # used to switch to CPU for testing
+# Used to switch to CPU for testing
+# Set to True to use the CPU
+if False:
     import os
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
@@ -10,14 +11,14 @@ import time
 from process_video import *
 
 IMG_DIR = 'graded_images'
-
+print(IMG_DIR)
 
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 save_dir = '.'
 windowsize = 48
 model_type = 'vgg16'
 saved_model = 'vgg16_model.h5'
-train_it = False  # Set this to True if you want to test a tiny training set
+train_it = True  # Set this to True if you want to test a tiny training set
 plot_them = False  # Used to plan train, validation, test data
 
 cnn = digit_cnn(model_size=(windowsize, windowsize, 3), save_dir=save_dir)
