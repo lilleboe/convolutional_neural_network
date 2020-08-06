@@ -1,5 +1,6 @@
 # Classification and Detection with Convolutional Neural Networks
 
+
 #### Required Software
 - Python 3.6
 - Tensorflow
