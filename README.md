@@ -38,4 +38,3 @@ Be careful running on GPU if you are using a personal computer vs running in AWS
 #### Video(s)
 - Example video can be found here:
   * https://www.youtube.com/watch?v=xWz1FvkK7Kc
-
